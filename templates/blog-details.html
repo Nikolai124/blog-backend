@@ -28,11 +28,11 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="main_blog_details">
-              {% if post.image_url %}
-                  <img class="img-fluid" src="{{post.image_url}}" alt="">
-              {% else %}
-                  <img class="img-fluid" src="{% static 'img/banner/blog.png' %}">
-              {% endif %}
+            {% if post.image_url %}
+              <img class="img-fluid" src="{{post.image_url}}" alt="картинка поста">
+            {% else %}
+              <img class="img-fluid" src="{% static 'img/banner/blog.png' %}">
+            {% endif %}
             <h4>{{post.title}}</h4>
             <div class="user_details">
               <div class="mt-sm-0 mt-3">
@@ -74,7 +74,7 @@
                   </div>
                 </div>
                 <div class="reply-btn">
-                        <a href="" class="btn-reply text-uppercase">reply</a> 
+                  <a href="" class="btn-reply text-uppercase">reply</a> 
                 </div>
               </div>
             </div>	                                          				
